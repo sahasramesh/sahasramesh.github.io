@@ -19,7 +19,7 @@ body {
 
 <style>
 a:link {
-  color: blue; 
+  color: blue;
   background-color: transparent;
   text-decoration: none;
 }
@@ -110,6 +110,7 @@ h5,
 h6 {
   margin: 10px 0;
   font-weight: normal;
+  font-family: "Proxima Nova";
 }
 
 a {

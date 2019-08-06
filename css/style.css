@@ -31,15 +31,15 @@ a:visited {
 }
 
 a:hover {
-  color: red;
+  color: orange;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
   color: yellow;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 </style>
 
@@ -110,7 +110,6 @@ h5,
 h6 {
   margin: 10px 0;
   font-weight: normal;
-  font-family: "Proxima Nova";
 }
 
 a {

@@ -17,6 +17,32 @@ body {
   -o-animation: fadein 2s; /* Opera */
 }
 
+<style>
+a:link {
+  color: blue; 
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
 @keyframes fadein {
     from {
         opacity:0;

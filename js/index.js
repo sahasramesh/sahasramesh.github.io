@@ -1,9 +1,12 @@
 jQuery(function($) {
-
+  <script>document.body.className += ' fade-out';</script>
   $('.pane').each(function(key, value) {
     $(value).data("getHeight", $(value).height());
   });
 
+  $(function() {
+    $('body').removeClass('fade-out');
+  });
   $(".handle").css("opacity", 0.5);
   $(".pane").css({
     "height": "0",

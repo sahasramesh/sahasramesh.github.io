@@ -10,76 +10,40 @@ body {
   color: #EEE;
   font-family: "Courier New";
   font-size: 62.5%;
-  background: #FFF;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
+  background: #EEE;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
 }
 
-.text::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  /* Remove display: inline-block if not required to be on the same line as text etc */
-  display: inline-block;
-  background-color: #606060;
-  vertical-align: top;
-  width: 5px;
-  /* Set height to the line height of .text */
-  height: 24px;
-  /*
-  Animation paramaters:
-  blink = animation-name,
-  1s = animation-duration,
-  step-end = animation-timing-function,
-  infinite = animation-iteration-count
-  */
-  -webkit-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-}
-
-@-webkit-keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-
-@keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
-
-<style>
 a:link {
   opacity: 1.0;
-  color: blue;
+  color: #F6610C;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
   opacity: 1.0;
-  color: pink;
+  color: #F6610C;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
   opacity: 1.0;
-  color: orange;
+  color: #762E04;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:active {
   opacity: 1.0;
-  color: yellow;
+  color: #762E04;
   background-color: transparent;
   text-decoration: none;
 }
-</style>
 
 @keyframes fadein {
     from {
@@ -151,15 +115,10 @@ h6 {
   font-weight: normal;
 }
 
-a {
-  color: #DC143C;
-  text-decoration: none;
-  opacity: 0.7;
-}
-
 p {
   margin: 10px 0;
-  font-size: 1.4em;
+  font-size: 2.2em;
+  color: black;
   letter-spacing: 1px;
 }
 
@@ -170,11 +129,12 @@ ul {
 ul li {
   margin: 10px 0;
   list-style: circle;
-  font-size: 1.4em;
+  font-size: 2.2em;
+  color: black;
 }
 
 ul li b {
-  color: #B22222;
+  color: black;
 }
 /* Generic Classes */
 
@@ -192,7 +152,7 @@ ul li b {
   width: 600px;
   padding: 20px;
   margin: 20px auto;
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, 0);
   border-radius: 10px;
 }
 
@@ -214,19 +174,32 @@ ul li b {
 .accordion {}
 
 .accordion .handle {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #FFF;
 }
 
 .accordion .handle h4 {
   padding: 10px 0;
   margin: 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #FFF;
   cursor: pointer;
-  color: #CCC;
+  color: #FFF;
 }
 
 .accordion .pane {}
 
 .accordion .pane .inner {
   padding: 20px 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
 }

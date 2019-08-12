@@ -18,16 +18,18 @@ body {
 }
 
 .text::after {
+  color: black;
   content: "";
   position: absolute;
-  top: 0;
+  top: 58.5px;
+  right: 404px;
   /* Remove display: inline-block if not required to be on the same line as text etc */
   display: inline-block;
   background-color: #606060;
   vertical-align: top;
-  width: 5px;
+  width: 1px;
   /* Set height to the line height of .text */
-  height: 24px;
+  height: 2.2em;
   /*
   Animation paramaters:
   blink = animation-name,

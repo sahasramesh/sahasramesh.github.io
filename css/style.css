@@ -17,30 +17,6 @@ body {
   -o-animation: fadein 3s; /* Opera */
 }
 
-.text::after {
-  color: black;
-  content: "";
-  position: absolute;
-  top: 58.5px;
-  right: 404px;
-  /* Remove display: inline-block if not required to be on the same line as text etc */
-  display: inline-block;
-  background-color: #606060;
-  vertical-align: top;
-  width: 1px;
-  /* Set height to the line height of .text */
-  height: 2.2em;
-  /*
-  Animation paramaters:
-  blink = animation-name,
-  1s = animation-duration,
-  step-end = animation-timing-function,
-  infinite = animation-iteration-count
-  */
-  -webkit-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
-}
-
 @-webkit-keyframes blink {
   0% { opacity: 1.0; }
   50% { opacity: 0.0; }

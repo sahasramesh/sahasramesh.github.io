@@ -32,6 +32,7 @@ p {
 }
 
 a:link {
+  transition-duration: 0.2s;
   opacity: 1.0;
   color: #F6610C;
   background-color: transparent;

@@ -30,6 +30,7 @@ body {
 }
 
 a:link {
+  transition-duration: 0.2s;
   opacity: 1.0;
   color: #F6610C;
   background-color: transparent;
@@ -154,10 +155,6 @@ ul li ul {
   color: black;
 }
 
-.clear {
-  clear: both;
-}
-
 .wrapper {
   width: 75%;
   margin: auto;
@@ -170,52 +167,4 @@ ul li ul {
   margin: 20px auto;
   background: rgba(0, 0, 0, 0);
   border-radius: 10px;
-}
-
-.description {}
-
-.controls {
-  float: right;
-  padding: 0;
-}
-
-.controls li {
-  float: left;
-  padding: 0;
-  margin: 0 0 0 10px;
-  list-style: none;
-}
-/* Accordion */
-
-.accordion {}
-
-.accordion .handle {
-  border-bottom: 1px solid #FFF;
-}
-
-.accordion .handle h4 {
-  padding: 10px 0;
-  margin: 0;
-  border-bottom: 1px solid #FFF;
-  cursor: pointer;
-  color: #FFF;
-}
-
-.accordion .pane {}
-
-.accordion .pane .inner {
-  padding: 20px 0;
-}
-
-.fa {
-  padding: 30px;
-  font-size: 30px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa:hover {
-  opacity: 0.7;
 }

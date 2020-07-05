@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.blackbox {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: black;
+}
+
+p {
+  font-family: 'Arial';
+  font-size: 28px;
+  margin: 100px;
+}
+
+a:link {
+  opacity: 1.0;
+  color: #F6610C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  opacity: 1.0;
+  color: #F6610C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1.0;
+  color: #762E04;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  opacity: 1.0;
+  color: #762E04;
+  background-color: transparent;
+  text-decoration: none;
+}

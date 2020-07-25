@@ -33,6 +33,22 @@ p {
   padding-right: 10px;
 }
 
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  padding-right: 30px;
+}
+
 .header-image {
   filter: brightness(90%);
   background-color: black;

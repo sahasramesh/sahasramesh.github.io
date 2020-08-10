@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Korvai generator</title>
+<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
 <body>
 
+<h1>Korvai generator</h1>
 <form>
   Select talam:
   <select id="tal">
@@ -12,7 +17,7 @@
   </select>
 </form>
 
-<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="myFunction()">Make korvai</button>
 
 <p id="demo"></p>
 
@@ -52,8 +57,12 @@ function myFunction() {
   var num;
   for (num = 0; num < iterations; num++) {
     var line = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
-    var line2 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br><br>";
-    finalList.push(line, line2);
+    var line2 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br>";
+    var line3 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
+    var line4 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br>";
+    var line5 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
+    var line6 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br><br>";
+    finalList.push(line, line2, line3, line4, line5, line6);
   }
 
   var str = finalList.join('');

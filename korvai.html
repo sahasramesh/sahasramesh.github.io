@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Korvai generator</title>
+<title>Korvai maker</title>
+<link rel="stylesheet" href="css/korvai.css">
 <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
 
-<h1>Korvai generator</h1>
+<h1>Korvai maker</h1>
 <form>
   Select talam:
   <select id="tal">
+    <option value=None>---</option>
     <option value="0">Adi Talam</option>
     <option value="1">Rupaka Talam</option>
     <option value="2">Misra Chapu</option>
@@ -19,7 +21,9 @@
 
 <button type="button" onclick="myFunction()">Make korvai</button>
 
-<p id="demo"></p>
+<div class="korvais">
+<p style="margin:30px;margin-top:30px;" id="demo"></p>
+</div>
 
 <script>
 function myFunction() {
@@ -27,12 +31,13 @@ function myFunction() {
   var utharangam = [];
   var karvai = [];
   var iterations = 0;
-  var talamList = [32, 36, 30, 28];
+  var talamList = [96, 108, 76, 90];
   var finalList = [];
 
   var e = document.getElementById("tal");
   var result = e.options[e.selectedIndex].value;
-  var beats = talamList[result];
+  var beats = talamList[result]/3
+  alert(beats)
 
   var i;
   var j;
@@ -56,13 +61,15 @@ function myFunction() {
 
   var num;
   for (num = 0; num < iterations; num++) {
-    var line = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
+    var num2 = num+1
+    var line0 = "<br><b>" + num2 + "</b>.<br>"
+    var line1 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
     var line2 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br>";
     var line3 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
     var line4 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br>";
     var line5 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
-    var line6 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br><br>";
-    finalList.push(line, line2, line3, line4, line5, line6);
+    var line6 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br><br><br>";
+    finalList.push(line0, line1, line2, line3, line4, line5, line6);
   }
 
   var str = finalList.join('');

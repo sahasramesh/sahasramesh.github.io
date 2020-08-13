@@ -6,8 +6,13 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+h1 {
+  text-align: center;
+}
+
 button {
   font-family: 'Roboto Mono', monospace;
+  text-align: center;
 }
 
 .korvais {

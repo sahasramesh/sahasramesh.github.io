@@ -7,19 +7,20 @@
 </head>
 <body>
 
+<div style="text-align:center;">
 <h1>Korvai maker</h1>
-<form>
-  Select talam:
+<div>
   <select id="tal">
-    <option value=None>---</option>
+    <option value=None>Talam</option>
     <option value="0">Adi Talam</option>
     <option value="1">Rupaka Talam</option>
     <option value="2">Misra Chapu</option>
     <option value="3">Khanda Chapu</option>
   </select>
-</form>
+</div>
 
 <button type="button" onclick="myFunction()">Make korvai</button>
+</div>
 
 <div class="korvais">
 <p style="margin:30px;margin-top:30px;" id="demo"></p>
@@ -37,7 +38,6 @@ function myFunction() {
   var e = document.getElementById("tal");
   var result = e.options[e.selectedIndex].value;
   var beats = talamList[result]/3
-  alert(beats)
 
   var i;
   var j;
@@ -47,7 +47,8 @@ function myFunction() {
       for (k = 0; k < beats; k++) {
         if (i%3 == 0 && j%3 == 0 && k%2 == 0) {
           if (i+j+k == beats || i+j+k == beats*2) {
-            if (k/2 < j/3 && i/3 > 3) {
+            // this next if makes sure the karvai is shorter than the utarangam and the poorvangam is greater than 9
+            if (i/3 > 3 && j/3 > 3) {
               poorvangam.push(i);
               utharangam.push(j);
               karvai.push(k);
@@ -62,7 +63,7 @@ function myFunction() {
   var num;
   for (num = 0; num < iterations; num++) {
     var num2 = num+1
-    var line0 = "<br><b>" + num2 + "</b>.<br>"
+    var line0 = "<br><b>" + num2 + ".</b><br>"
     var line1 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";
     var line2 = utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + " " + karvai[num]/2 + " " + utharangam[num]/3 + "<br>";
     var line3 = poorvangam[num]/3 + " " + poorvangam[num]/3 + " " + poorvangam[num]/3 + "<br>";

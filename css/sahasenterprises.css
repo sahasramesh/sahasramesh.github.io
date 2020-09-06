@@ -75,7 +75,7 @@ p {
 .whitebox {
   border: 1px solid black;
   box-shadow: 5px 5px 5px gray;
-  height: 280px;
+  height: 320px;
 }
 
 @media only screen and (max-device-width: 1366px) {

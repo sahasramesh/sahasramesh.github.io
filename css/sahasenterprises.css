@@ -77,3 +77,9 @@ p {
   box-shadow: 5px 5px 5px gray;
   height: 280px;
 }
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}

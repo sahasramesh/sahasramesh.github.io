@@ -75,7 +75,19 @@ p {
 .whitebox {
   border: 1px solid black;
   box-shadow: 5px 5px 5px gray;
-  height: 320px;
+  height: 290px;
+}
+
+.whitebox1 {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  height: 360px;
+}
+
+.whitebox2 {
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  height: 460px;
 }
 
 @media only screen and (max-device-width: 1366px) {

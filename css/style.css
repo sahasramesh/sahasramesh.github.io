@@ -171,7 +171,7 @@ ul li ul {
 
 .fa {
   transition-duration: 0.2s;
-  padding: 30px;
+  margin-right: 60px;
   font-size: 30px;
   width: 20px;
   text-align: center;

@@ -203,8 +203,8 @@ ul li ul {
   -webkit-transition: height 0.5s;
   text-align: left;
   overflow: hidden;
-  transition: 0.8s;
+  transition: 0.4s;
 }
-.grow:hover {
+.grow:hover, .grow:active {
   height: 120px;
 }

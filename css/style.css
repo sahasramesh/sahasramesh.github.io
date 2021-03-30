@@ -1,4 +1,7 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 html {
   font-size: 100%;
@@ -135,6 +138,13 @@ p {
   letter-spacing: 1px;
 }
 
+.littledescs {
+  margin: 10px 0;
+  font-size: 0.7em;
+  color: black;
+  letter-spacing: 1px;
+}
+
 ul {
   padding: 0 0 0 20px;
 }
@@ -181,4 +191,20 @@ ul li ul {
 
 .fa:hover {
   opacity: 0.7;
+}
+
+.grow {
+  border-radius: 10px;
+  height: 36px;
+  width: 100%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: left;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.grow:hover {
+  height: 120px;
 }

@@ -33,7 +33,7 @@ body {
 }
 
 a:link {
-  transition-duration: 0.2s;
+  transition-duration: 0s;
   opacity: 1.0;
   color: #F6610C;
   background-color: transparent;

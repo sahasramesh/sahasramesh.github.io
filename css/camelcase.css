@@ -70,21 +70,18 @@ p {
   height: 5.498vw;
   background-color: white;
   box-shadow: 0.4vw 0.4vw 2vw darkgray;
-  transition-duration: 0.1s;
 }
 
 .sandwich {
   position: absolute;
   top: 1.4vw;
   left: 1.4vw;
-  transition-duration: 0.1s;
 }
 
 .logo {
   position: absolute;
   top: 1.4vw;
   left: 45vw;
-  transition-duration: 0.1s;
 }
 
 .menu-button {

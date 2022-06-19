@@ -1,16 +1,19 @@
 @font-face {
   font-family: Agrandir;
-  src: url(/Users/sahasramesh/Library/Fonts/Agrandir-GrandHeavy.otf);
+  /*src: url(/Users/sahasramesh/Library/Fonts/Agrandir-GrandHeavy.otf);*/
+  src: url(/fonts/Agrandir-GrandHeavy.otf);
 }
 
 @font-face {
   font-family: Inter-Light;
-  src: url(/Users/sahasramesh/Library/Fonts/Inter-Light.ttf);
+  /*src: url(/Users/sahasramesh/Library/Fonts/Inter-Light.ttf);*/
+  src: url(/fonts/Inter-Light.ttf);
 }
 
 @font-face {
   font-family: Inter-Bold;
-  src: url(/Users/sahasramesh/Library/Fonts/Inter-Bold.ttf);
+  /*src: url(/Users/sahasramesh/Library/Fonts/Inter-Bold.ttf);*/
+  src: url(/fonts/Inter-Bold.ttf);
 }
 
 body {
@@ -60,12 +63,14 @@ p {
 }
 
 .menu {
+  z-index: 99;
   margin: 0vw;
   padding: 0vw;
-  position: fixed;
   width: 100%;
   height: 5.498vw;
-  background-color: greenyellow;
+  background-color: white;
+  box-shadow: 0.4vw 0.4vw 2vw darkgray;
+  transition-duration: 1s;
 }
 
 .sandwich {
@@ -85,6 +90,20 @@ p {
   position: absolute;
   top: 1.2vw;
   right: 1.8vw;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 0vw;
+}
+
+.sticky + .content {
+  padding-top: 5.498vw;
 }
 
 .container {
@@ -154,10 +173,18 @@ p {
   border-radius: 0.632vw;
   height: 2.907vw;
   width: 14.029vw;
-  background-image: linear-gradient(to right, red, yellow);
+  background-image: linear-gradient(to right, #3D53C6, #3BB9CA);
   color: white;
   font-family: Inter-Bold;
   font-size: 1.643vw;
+  margin: 4vw;
+  margin-bottom: 5vw;
+  margin-top: 0vw;
+}
+
+.blue-button:hover {
+  background-image: linear-gradient(to right, #3BB9CA, #3D53C6);
+  transition-duration: 1s;
 }
 
 .scrolling-wrapper {

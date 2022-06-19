@@ -1,0 +1,194 @@
+@font-face {
+  font-family: Agrandir;
+  src: url(/Users/sahasramesh/Library/Fonts/Agrandir-GrandHeavy.otf);
+}
+
+@font-face {
+  font-family: Inter-Light;
+  src: url(/Users/sahasramesh/Library/Fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(/Users/sahasramesh/Library/Fonts/Inter-Bold.ttf);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-family: 'Agrandir', serif;
+  font-size: 4.514vw;
+  color: white;
+}
+
+h2 {
+  font-family: 'Agrandir', serif;
+  font-size: 2.986vw;
+  color: black;
+  line-height: 4.375vw;
+}
+
+h3 {
+  text-align: center;
+  margin: 0vw;
+  padding: 0vw;
+  font-family: 'Agrandir', serif;
+  font-size: 2.014vw;
+  color: #FFC32D;
+}
+
+h5 {
+  font-family: 'Inter-Light';
+  font-size: 2.778vw;
+  line-height: 4.5vw;
+  margin: 2vw;
+}
+
+a {
+  color: #3BB9CA;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Inter-Light';
+  font-size: 2.014vw;
+  color: black;
+  line-height: 2.847vw;
+}
+
+.menu {
+  margin: 0vw;
+  padding: 0vw;
+  position: fixed;
+  width: 100%;
+  height: 5.498vw;
+  background-color: greenyellow;
+}
+
+.sandwich {
+  position: absolute;
+  top: 1.4vw;
+  left: 1.4vw;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-button {
+  position: absolute;
+  top: 1.2vw;
+  right: 1.8vw;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.text-in-main {
+  position: absolute;
+  width: 60%;
+  top: 4vw;
+  left: 7vw;
+}
+
+.quote {
+  text-align: left;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+}
+
+.summary {
+  position: relative;
+}
+
+.summary-left {
+  position: absolute;
+  top: 2vw;
+  left: 4vw;
+  width: 40%;
+}
+
+.summary-right {
+  position: absolute;
+  top: 2vw;
+  right: 4vw;
+  padding-left: 48vw;
+  padding-right: 4vw;
+}
+
+.black-button {
+  border: none;
+  border-radius: 0.948vw;
+  height: 3.792vw;
+  width: 16.304vw;
+  background-color: black;
+  color: #FFC32D;
+  font-family: Inter-Bold;
+  font-size: 2.013vw;
+}
+
+.special-button {
+  border: none;
+  border-radius: 0.632vw;
+  height: 2.907vw;
+  width: 14.029vw;
+  background-color: #FFC32D;
+  color: white;
+  font-family: Inter-Bold;
+  font-size: 1.643vw;
+}
+
+.blue-button {
+  border: none;
+  border-radius: 0.632vw;
+  height: 2.907vw;
+  width: 14.029vw;
+  background-image: linear-gradient(to right, red, yellow);
+  color: white;
+  font-family: Inter-Bold;
+  font-size: 1.643vw;
+}
+
+.scrolling-wrapper {
+  clear: both;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 5vw;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+}
+
+.fillerblock {
+  display: inline-block;
+  width: 1vw;
+}
+
+.carouselimg {
+  padding: 2vw;
+}
+
+.about {
+  position: absolute;
+  width: 60%;
+  top: 2vw;
+  left: 4vw;
+}

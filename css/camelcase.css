@@ -70,26 +70,28 @@ p {
   height: 5.498vw;
   background-color: white;
   box-shadow: 0.4vw 0.4vw 2vw darkgray;
-  transition-duration: 1s;
+  transition-duration: 0.1s;
 }
 
 .sandwich {
   position: absolute;
   top: 1.4vw;
   left: 1.4vw;
+  transition-duration: 0.1s;
 }
 
 .logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 1.4vw;
+  left: 45vw;
+  transition-duration: 0.1s;
 }
 
 .menu-button {
   position: absolute;
   top: 1.2vw;
   right: 1.8vw;
+  transition-duration: 0.1s;
 }
 
 .sticky {
@@ -170,13 +172,13 @@ p {
 
 .blue-button {
   border: none;
-  border-radius: 0.632vw;
-  height: 2.907vw;
-  width: 14.029vw;
+  border-radius: 0.948vw;
+  height: 3.792vw;
+  width: 16.304vw;
   background-image: linear-gradient(to right, #3D53C6, #3BB9CA);
   color: white;
   font-family: Inter-Bold;
-  font-size: 1.643vw;
+  font-size: 2.013vw;
   margin: 4vw;
   margin-bottom: 5vw;
   margin-top: 0vw;

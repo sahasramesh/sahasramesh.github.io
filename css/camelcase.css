@@ -145,45 +145,44 @@ p {
   padding-right: 4vw;
 }
 
-.black-button {
+.button {
   border: none;
+  font-family: Inter-Bold;
+  transition: 0.2s;
+}
+
+.black-button {
   border-radius: 0.948vw;
   height: 3.792vw;
   width: 16.304vw;
   background-color: black;
   color: #FFC32D;
-  font-family: Inter-Bold;
   font-size: 2.013vw;
 }
 
 .special-button {
-  border: none;
   border-radius: 0.632vw;
   height: 2.907vw;
   width: 14.029vw;
   background-color: #FFC32D;
   color: white;
-  font-family: Inter-Bold;
   font-size: 1.643vw;
 }
 
 .blue-button {
-  border: none;
   border-radius: 0.948vw;
   height: 3.792vw;
   width: 16.304vw;
   background-image: linear-gradient(to right, #3D53C6, #3BB9CA);
   color: white;
-  font-family: Inter-Bold;
   font-size: 2.013vw;
   margin: 4vw;
   margin-bottom: 5vw;
   margin-top: 0vw;
 }
 
-.blue-button:hover {
-  background-image: linear-gradient(to right, #3BB9CA, #3D53C6);
-  transition-duration: 1s;
+.button:hover {
+  opacity: 70%;
 }
 
 .scrolling-wrapper {

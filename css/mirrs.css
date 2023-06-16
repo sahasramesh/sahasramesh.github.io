@@ -1,0 +1,80 @@
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+body {
+    animation: fade-in 1.5s ease-in;
+    margin: 0px;
+    background-color: #F0F0F0;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.image-container img {
+    height: 250px;
+}
+
+.image-container p {
+    margin-top: 40px;
+    font-size: 11px;
+    max-width: 250px;
+    font-family: Fira Code;
+}
+
+p {
+    text-indent: 2em;
+}
+
+p span.green {
+    color: rgb(101, 201, 122);
+    font-weight: bold;
+}
+
+.right-align {
+    text-align: right;
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: 0px;
+    margin: 10px;
+    background-color: #F0F0F0;
+}
+
+#play-pause-btn.play::before {
+    content: "▶";
+    font-size: 30px;
+}
+
+#play-pause-btn.pause::before {
+    content: "⏸";
+    font-size: 30px;
+}
+
+
+
+
+

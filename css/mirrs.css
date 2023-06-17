@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap');
+
 @keyframes fade-in {
     from {
       opacity: 0;
@@ -8,7 +10,7 @@
   }
 
 body {
-    animation: fade-in 0s ease-in;
+    animation: fade-in 1.2s ease-in;
     margin-bottom: 0px;
     background-color: #F0F0F0;
 }
@@ -28,18 +30,14 @@ body {
 
 .image-container p {
     margin-top: 40px;
-    font-size: 11px;
+    font-size: 14px;
+    line-height: 20px;
     max-width: 250px;
-    font-family: Fira Code;
+    font-family: 'EB Garamond';
 }
 
 p {
     text-indent: 2em;
-}
-
-p span.green {
-    color: rgb(101, 201, 122);
-    font-weight: bold;
 }
 
 .right-align {

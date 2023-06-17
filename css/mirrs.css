@@ -67,17 +67,16 @@ footer {
     height: 100px;
     border: none;
     background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     position: relative;
+    color: black;
   }
   
   #play-pause-btn::before,
   #play-pause-btn::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
   
   #play-pause-btn::before {
@@ -107,13 +106,12 @@ footer {
   
   #play-pause-btn.pause::after {
     display: block;
-    transform: scale(var(--ggs, 1));
     width: 16px; /* Adjust the width */
     height: 20px; /* Adjust the height */
     border-left: 6px solid; /* Adjust the border width */
     border-right: 6px solid; /* Adjust the border width */
     top: 50%;
     left: 50%;
-    transform: translate(-55%, -240%); /* Adjust the translation */
+    transform: translate(-55%, -50%); /* Adjust the translation */
   }
   

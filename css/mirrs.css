@@ -8,8 +8,8 @@
   }
 
 body {
-    animation: fade-in 1.5s ease-in;
-    margin: 0px;
+    animation: fade-in 0s ease-in;
+    margin-bottom: 0px;
     background-color: #F0F0F0;
 }
 
@@ -51,30 +51,69 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    background-color: transparent;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
+  
+  button {
+    margin: -16px;
+  }
 
-button {
-    border: 0px;
-    margin: 10px;
-    background-color: #F0F0F0;
-}
-
-#play-pause-btn.play::before {
-    content: "▶";
-    font-size: 30px;
-}
-
-#play-pause-btn.pause::before {
-    content: "⏸";
-    font-size: 30px;
-}
-
-
-
-
-
+  #play-pause-btn {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #play-pause-btn::before,
+  #play-pause-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #play-pause-btn::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    width: 0;
+    height: 20px; /* Adjust the height */
+    border-top: 10px solid transparent; /* Adjust the border width */
+    border-bottom: 10px solid transparent; /* Adjust the border width */
+    border-left: 12px solid; /* Adjust the border width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #play-pause-btn::after {
+    content: '';
+    box-sizing: border-box;
+    position: relative;
+    display: none;
+  }
+  
+  #play-pause-btn.pause::before {
+    display: none;
+  }
+  
+  #play-pause-btn.pause::after {
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 16px; /* Adjust the width */
+    height: 20px; /* Adjust the height */
+    border-left: 6px solid; /* Adjust the border width */
+    border-right: 6px solid; /* Adjust the border width */
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -240%); /* Adjust the translation */
+  }
+  

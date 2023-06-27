@@ -40,12 +40,10 @@ playButton2.addEventListener('click', () => {
 
 audio1.addEventListener('ended', () => {
   isAudio1Playing = false;
-  playButton1.textContent = 'Play Audio 1';
   audio1.currentTime = 0;
 });
 
 audio2.addEventListener('ended', () => {
   isAudio2Playing = false;
-  playButton2.textContent = 'Play Audio 2';
   audio2.currentTime = 0;
 });

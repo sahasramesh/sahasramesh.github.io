@@ -2,7 +2,7 @@
 
 @keyframes fade-in {
     from {
-      opacity: 0;
+      opacity: 1;
     }
     to {
       opacity: 1;
@@ -45,71 +45,35 @@ p {
     display: block;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  button {
-    margin: -16px;
-  }
+button {
+  width: 200px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.698) inset, 0 1px 0 0 rgba(0, 0, 0, 0.075);
+  color: #595959;
+  cursor: pointer;
+  font-family: 'EB Garamond';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
 
-  #play-pause-btn {
-    width: 100px;
-    height: 100px;
-    border: none;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-    position: relative;
-    color: black;
-  }
-  
-  #play-pause-btn::before,
-  #play-pause-btn::after {
-    content: '';
-    position: absolute;
-  }
-  
-  #play-pause-btn::before {
-    content: '';
-    display: block;
-    box-sizing: border-box;
-    width: 0;
-    height: 20px; /* Adjust the height */
-    border-top: 10px solid transparent; /* Adjust the border width */
-    border-bottom: 10px solid transparent; /* Adjust the border width */
-    border-left: 12px solid; /* Adjust the border width */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  #play-pause-btn::after {
-    content: '';
-    box-sizing: border-box;
-    position: relative;
-    display: none;
-  }
-  
-  #play-pause-btn.pause::before {
-    display: none;
-  }
-  
-  #play-pause-btn.pause::after {
-    display: block;
-    width: 16px; /* Adjust the width */
-    height: 20px; /* Adjust the height */
-    border-left: 6px solid; /* Adjust the border width */
-    border-right: 6px solid; /* Adjust the border width */
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -50%); /* Adjust the translation */
-  }
-  
+button:hover {
+  background-color: #F6F6F6;
+  outline: medium none;
+}
+
+button:focus{
+  outline: medium none;
+}
+
+button:active, button.active{
+  background-color: #DDDDDD;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075) inset;
+  outline: medium none;
+}

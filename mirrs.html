@@ -10,7 +10,11 @@
 </head>
 <body>
     <div class="image-container">
-        <img src="img/imgmirrs/duckndog.jpg" alt="Duck n dog">
+        <video autoplay loop muted>
+            <source src="audio/duckndog.mp4" type="video/mp4">
+            <!-- You can add additional source tags for different video formats (e.g., WebM, Ogg) -->
+            Your browser does not support the video tag.
+        </video>
         <p>
             Hi, Mirrs. My special girl. My shining star. I could go
             on and on. Since the day I met you, my whole world has changed. I'll never forget that first kiss on
@@ -30,9 +34,11 @@
 
         <button id="button button1">Shake it Off (Sahas's Version)</button>
         <button id="button button2">This Love (Sahas's Version)</button>
+        <button id="button button3">Love Story (Sahas's Version)</button>
     </div>
     <audio id="audio1" src="audio/shakeitoff.mp3"></audio>
     <audio id="audio2" src="audio/thislove.mp3"></audio>
+    <audio id="audio3" src="audio/lovestory.mp3"></audio>
 
     <script src="js/mirrs.js"></script>
 </body>

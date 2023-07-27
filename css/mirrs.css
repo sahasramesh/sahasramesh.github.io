@@ -16,9 +16,6 @@ body {
     background-color: #F0F0F0;
 }
 
-video {
-  height: 250px;
-}
 .image-container {
     display: flex;
     flex-direction: column;

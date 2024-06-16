@@ -10,7 +10,7 @@
   }
 
 body {
-    animation: fade-in 1.2s ease-in;
+    animation: fade-in 0.8s ease-in;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #F0F0F0;
@@ -43,6 +43,12 @@ p {
 .right-align {
     text-align: right;
     display: block;
+}
+
+.left-align {
+    text-align: left;
+    display: block;
+    text-indent: 0em;
 }
 
 button {

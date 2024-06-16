@@ -7,40 +7,120 @@
     <link rel="stylesheet" type="text/css" href="css/mirrs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <style>
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab button {
+            background-color: #f1f1f1;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .container-2023, .container-2024 {
+            display: none;
+        }
+        .container-2024 {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="audio/duckndog.gif" alt="Duck n dog">
-        <p>
-            Hi, Mirrs. My special girl. My shining star. I could go
-            on and on. Since the day I met you, my whole world has changed. I'll never forget that first kiss on
-            the cheek you gave me, because it marked the start of 
-            our magical journey together. You're unlike any person 
-            I've ever met–beautiful, kind, funny, and infinitely 
-            curious. I'm so excited to spend this piece of my life 
-            with you, and with any luck, this will be the first of 
-            many times I get to wish you a very 
-            happy birthday! I love you to the moon and back, 
-            and I'm counting the days until I get to hold you in my 
-            arms again.<br><br>
-        
-            <span class="right-align">Yours forever,<br>
-            Sahas</span>
-        </p>
-
-        <button id="button button1">Shake it Off (Sahas's Version)</button>
-        <button id="button button2">This Love (Sahas's Version)</button>
-        <button id="button button3">Love Story (Sahas's Version)</button>
-        <button id="button button4">Style (Sahas's Version)</button>
-        <button id="button button5">Sparks Fly (Sahas's Version)</button>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, '2023')">2023</button>
+        <button class="tablinks active" onclick="openTab(event, '2024')">2024</button>
     </div>
 
-    <audio id="audio1" src="audio/shakeitoff.mp3"></audio>
-    <audio id="audio2" src="audio/thislove.mp3"></audio>
-    <audio id="audio3" src="audio/lovestory.mp3"></audio>
-    <audio id="audio4" src="audio/style.mp3"></audio>
-    <audio id="audio5" src="audio/sparksfly.mp3"></audio>
+    <div class="container">
+        <div id="2023" class="container-2023">
+            <div class="image-container">
+                <img src="audio/duckndog.gif" alt="Duck n dog">
+                <p>
+                    Hi, Mirrs. My special girl. My shining star. I could go
+                    on and on. Since the day I met you, my whole world has changed. I'll never forget that first kiss on
+                    the cheek you gave me, because it marked the start of 
+                    our magical journey together. You're unlike any person 
+                    I've ever met–beautiful, kind, funny, and infinitely 
+                    curious. I'm so excited to spend this piece of my life 
+                    with you, and with any luck, this will be the first of 
+                    many times I get to wish you a very 
+                    happy birthday! I love you to the moon and back, 
+                    and I'm counting the days until I get to hold you in my 
+                    arms again.<br><br>
+                
+                    <span class="right-align">Yours forever,<br>
+                    Sahas</span>
+                </p>
 
-    <script src="js/mirrs.js"></script>
+                <button id="button button1">Shake it Off (Sahas's Version)</button>
+                <button id="button button2">This Love (Sahas's Version)</button>
+                <button id="button button3">Love Story (Sahas's Version)</button>
+                <button id="button button4">Style (Sahas's Version)</button>
+                <button id="button button5">Sparks Fly (Sahas's Version)</button>
+            </div>
+
+            <audio id="audio1" src="audio/shakeitoff.mp3"></audio>
+            <audio id="audio2" src="audio/thislove.mp3"></audio>
+            <audio id="audio3" src="audio/lovestory.mp3"></audio>
+            <audio id="audio4" src="audio/style.mp3"></audio>
+            <audio id="audio5" src="audio/sparksfly.mp3"></audio>
+        </div>
+
+        <div id="2024" class="container-2024">
+            <div class="image-container">
+                <img src="img/imgmirrs/mirrsnme24.jpg" alt="Mirrs n me">
+                <p>
+                    <span class="left-align" style="padding-right: 184px;">Dear Mirrs,</span>
+                    <p style="margin-top: 0;">
+                    Happy 21st birthday!! Since your last one, we've 
+                    grown so much closer and I've fallen in love with 
+                    you more and more every day. I know 21 is a big 
+                    deal, and a lot's gonna change in our little 
+                    lives. It's the time to go on wacky adventures, 
+                    your dreams blending brilliantly into reality, 
+                    feeling the whole entire world in the palm of 
+                    your hand. It warms my heart that I get to be the 
+                    one to do this with you, to step into a new 
+                    universe of possibilities with the girl of my 
+                    dreams right beside me. I love you so much m dubs, 
+                    see you in STL!<br><br>
+                
+                        <span class="right-align">Sincerely,<br>
+                        Sahas</span>
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, year) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("container-2023");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tabcontent = document.getElementsByClassName("container-2024");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(year).style.display = "block";
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>

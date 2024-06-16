@@ -45,12 +45,6 @@ p {
     display: block;
 }
 
-.left-align {
-    text-align: left;
-    display: block;
-    text-indent: 0em;
-}
-
 button {
   width: 200px;
   background-color: transparent;

@@ -1,9 +1,9 @@
 const playButtons = [
-  document.getElementById('button button1'),
-  document.getElementById('button button2'),
-  document.getElementById('button button3'),
-  document.getElementById('button button4'),
-  document.getElementById('button button5')
+  document.getElementById('button1'),
+  document.getElementById('button2'),
+  document.getElementById('button3'),
+  document.getElementById('button4'),
+  document.getElementById('button5')
 ];
 
 const audios = [

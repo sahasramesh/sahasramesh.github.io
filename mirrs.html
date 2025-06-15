@@ -28,10 +28,10 @@
         .tab button.active {
             background-color: #ccc;
         }
-        .container-2023, .container-2024 {
+        .container-2023, .container-2024, .container-2025 {
             display: none;
         }
-        .container-2024 {
+        .container-2025 {
             display: block;
         }
     </style>
@@ -39,7 +39,8 @@
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, '2023')">2023</button>
-        <button class="tablinks active" onclick="openTab(event, '2024')">2024</button>
+        <button class="tablinks" onclick="openTab(event, '2024')">2024</button>
+        <button class="tablinks active" onclick="openTab(event, '2025')">2025</button>
     </div>
 
     <div class="container">
@@ -102,25 +103,52 @@
                 </p>
             </div>
         </div>
+        <div id="2025" class="container-2025" style="display:none;">
+            <div class="image-container">
+                <img src="img/imgmirrs/mirrsnme25.jpg" alt="Mirrs n me 2025">
+                <p>
+                    <span style="padding-right: 184px;text-indent: 0em;text-align: left;display: block;">Dear Mirrs,</span>
+                    <p style="margin-top: 0;">
+                    Happy 22nd birthday, love! You're not going to believe this, but
+                    this summer, we're together, in your dream city Seattle, interning
+                    for our dream careers at Amazon! And most importantly, I finally
+                    get to spend your birthday with you in person. Our love has persisted
+                    through everything this past year, and we have always had each other's 
+                    backs, whether we're 370 miles apart or 37. Now, we can reap the rewards 
+                    of our hard work here in a brand new city, and when we need a break, we 
+                    can take comfort in knowing that home is just a 10 minute walk away. Thanks
+                    for letting me love you for another year. I can't wait to see what's next 
+                    for us!
+                    <br><br>
+                        <span class="right-align">With all my heart,<br>
+                        Sahas</span>
+                    </p>
+                </p>
+            </div>
+        </div>
     </div>
     <script>
         function openTab(evt, year) {
             var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("container-2023");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+            // Hide all containers
+            var containers = document.querySelectorAll('[class^="container-"]');
+            for (i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
             }
-            tabcontent = document.getElementsByClassName("container-2024");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
+            // Show the selected year
             document.getElementById(year).style.display = "block";
+            // Remove 'active' from all tabs
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
+            // Add 'active' to the clicked tab
             evt.currentTarget.className += " active";
         }
+        window.onload = function() {
+            openTab(null, '2025');
+        };
+
     </script>
     <script src="mirrs.js"></script>
 </body>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+<style>
+
+@-webkit-keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body,
+html {
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  -o-animation: fadein 3s; /* Opera */
+
+  @supports(display: grid) {
+    display: block;
+  }
+}
+
+h1 {
+  font-size: 3.0em;
+  text-align: center;
+}
+
+div.gallery {
+  border: 1px solid #777;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+div.gallery:hover {
+  border: 1px solid;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin: 0 0.5% 20px 0.5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Happy Father's Day, Appa!</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/appa1.jpg">
+      <img src="img/appa1.jpg" alt="2020" width="600" height="400">
+    </a>
+    <div class="desc"><b>June 21, 2020</b> - Lockdown, Breaking Bad, and Sagar's knee surgery</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/appa2.jpg">
+      <img src="img/appa2.jpg" alt="2025" width="600" height="400">
+    </a>
+    <div class="desc"><b>June 15, 2025</b> - Seattle, Banff, and Yellowstone</div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
